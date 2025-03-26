@@ -96,6 +96,8 @@
                 "elasticloadbalancing:RemoveTags",
                 "elasticloadbalancing:SetSecurityGroups",
                 "elasticloadbalancing:SetSubnets",
+                "elasticloadbalancing:ModifyListenerAttributes",
+				"elasticloadbalancing:DescribeListenerAttributes",
                 "ecr:CreateRepository",
                 "ecr:DescribeRepositories",
                 "ecr:ListTagsForResource",
