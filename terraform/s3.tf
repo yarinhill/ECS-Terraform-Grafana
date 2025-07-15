@@ -1,11 +1,11 @@
 /*
-terraform {
-  required_version = ">= 0.12.0"
-  backend "s3" {
-    region  = <your_region>
-    profile = "default"
-    key     = "terraform.tfstate"
-    bucket  = <your_bucket_name>
-  }
+terraform {  
+  backend "s3" {  
+    bucket       = "<your_bucket_name>"
+    key          = "terraform.tfstate"
+    region       = "<your_region>"
+    encrypt      = true  
+    use_lockfile = true  #S3 native locking
+  }  
 }
 */
